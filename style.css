@@ -219,10 +219,18 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   position: relative;
-  padding: 140px 0 90px;
+  padding: 0;
   overflow: hidden;
+}
+
+/* Hero body: fills available space and centers the grid content */
+.hero-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 140px 0 0;
 }
 
 .hero-grid {
@@ -329,8 +337,15 @@ body {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 .hero-text {
@@ -492,12 +507,19 @@ body {
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes spin-reverse {
-  from { transform: rotate(-28deg); }
-  to { transform: rotate(332deg); }
+  from {
+    transform: rotate(-28deg);
+  }
+
+  to {
+    transform: rotate(332deg);
+  }
 }
 
 /* Central Code Window */
@@ -542,9 +564,17 @@ body {
   border-radius: 50%;
 }
 
-.dot-red { background: #ff5f56; }
-.dot-yellow { background: #ffbd2e; }
-.dot-green { background: #27c93f; }
+.dot-red {
+  background: #ff5f56;
+}
+
+.dot-yellow {
+  background: #ffbd2e;
+}
+
+.dot-green {
+  background: #27c93f;
+}
 
 .window-title {
   font: 500 11px "JetBrains Mono", monospace;
@@ -562,12 +592,29 @@ body {
 }
 
 /* Syntax Highlighting Tokens */
-.pink { color: #f472b6; }
-.purple { color: #c084fc; }
-.blue { color: #60a5fa; }
-.yellow { color: #fbbf24; }
-.green { color: #28d7b4; }
-.var { color: #93c5fd; }
+.pink {
+  color: #f472b6;
+}
+
+.purple {
+  color: #c084fc;
+}
+
+.blue {
+  color: #60a5fa;
+}
+
+.yellow {
+  color: #fbbf24;
+}
+
+.green {
+  color: #28d7b4;
+}
+
+.var {
+  color: #93c5fd;
+}
 
 /* Floating Tech Cards */
 .float-card {
@@ -655,15 +702,18 @@ body {
 }
 
 @keyframes floating {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-11px);
   }
 }
 
-/* Scroll Hint */
+/* Scroll Hint — sits between hero-body and marquee */
 .scroll-hint {
   display: flex;
   align-items: center;
@@ -672,9 +722,10 @@ body {
   color: var(--subtle);
   font: 600 10px "Space Grotesk", sans-serif;
   letter-spacing: 2px;
-  margin-top: 30px;
+  padding: 18px 0 14px;
   animation: scrollBounce 2s ease-in-out infinite;
   user-select: none;
+  margin-top: 50px;
 }
 
 .scroll-hint svg {
@@ -682,11 +733,18 @@ body {
 }
 
 @keyframes scrollBounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(6px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(6px);
+  }
 }
 
-/* Marquee Banner */
+/* Marquee Banner — pinned to bottom of hero */
 .hero-marquee {
   width: 100%;
   overflow: hidden;
@@ -694,10 +752,9 @@ body {
   border-bottom: 1px solid var(--line);
   padding: 13px 0;
   background: rgba(255, 255, 255, 0.015);
-  margin-top: 50px;
 }
 
-.hero-marquee > div {
+.hero-marquee>div {
   display: flex;
   gap: 32px;
   width: max-content;
@@ -714,13 +771,15 @@ body {
 }
 
 @keyframes marquee {
-  to { transform: translateX(-50%); }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 /* ================= SECTION BASE ================= */
 
 .section {
-  padding: 120px 0;
+  padding: 90px 0;
   position: relative;
 }
 
@@ -728,9 +787,9 @@ body {
   margin-bottom: 50px;
 }
 
-.section-head > span,
-.payment-intro > div > span,
-.contact-left > span {
+.section-head>span,
+.payment-intro>div>span,
+.contact-left>span {
   font: 600 11px "Space Grotesk", sans-serif;
   letter-spacing: 2.4px;
   color: var(--accent);
@@ -987,7 +1046,7 @@ body {
   margin-bottom: 45px;
 }
 
-.payment-intro > p {
+.payment-intro>p {
   color: var(--muted);
   font-size: 14.5px;
   line-height: 1.7;
@@ -1051,12 +1110,29 @@ body {
   color: var(--subtle);
 }
 
-.gateway-logo.razor { color: #79a7ff; }
-.gateway-logo.paytm { color: #55a7ff; }
-.gateway-logo.phone { color: #a78bff; }
-.gateway-logo.stack { color: #f0a27c; }
-.gateway-logo.cash { color: #5fd8b0; }
-.gateway-logo.remita { color: #e99b68; }
+.gateway-logo.razor {
+  color: #79a7ff;
+}
+
+.gateway-logo.paytm {
+  color: #55a7ff;
+}
+
+.gateway-logo.phone {
+  color: #a78bff;
+}
+
+.gateway-logo.stack {
+  color: #f0a27c;
+}
+
+.gateway-logo.cash {
+  color: #5fd8b0;
+}
+
+.gateway-logo.remita {
+  color: #e99b68;
+}
 
 /* Payment Code Display */
 .payment-code {
@@ -1276,6 +1352,7 @@ footer .container {
 /* ================= RESPONSIVE STYLES ================= */
 
 @media (max-width: 950px) {
+
   .hero-grid,
   .about-grid,
   .payment-intro,
@@ -1344,7 +1421,11 @@ footer .container {
   }
 
   .hero {
-    padding: 120px 0 60px;
+    padding: 0;
+  }
+
+  .hero-body {
+    padding: 115px 0 0;
   }
 
   .hero-title {
@@ -1415,7 +1496,7 @@ footer .container {
   }
 
   .section {
-    padding: 85px 0;
+    padding: 65px 0;
   }
 
   .section-head h2 {
@@ -1481,12 +1562,12 @@ footer .container {
 
 /* ================= SECTION HEADING ANIMATION ================= */
 
-.section-head > span {
+.section-head>span {
   display: inline-block;
   animation: none;
 }
 
-.section-head.visible > span {
+.section-head.visible>span {
   animation: slideInTag 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
@@ -1495,13 +1576,27 @@ footer .container {
 }
 
 @keyframes slideInTag {
-  from { opacity: 0; transform: translateX(-20px); }
-  to   { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes slideInHeading {
-  from { opacity: 0; transform: translateY(18px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ================= TIMELINE BEAM ================= */
@@ -1544,8 +1639,15 @@ footer .container {
 }
 
 @keyframes sonarPulse {
-  0%   { opacity: 0.7; transform: scale(1); }
-  100% { opacity: 0; transform: scale(2.8); }
+  0% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(2.8);
+  }
 }
 
 /* ================= TIMELINE ITEM REVEAL STAGGER ================= */
@@ -1555,15 +1657,24 @@ footer .container {
 }
 
 @keyframes timelineSlide {
-  from { opacity: 0; transform: translateX(-24px); }
-  to   { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Enhanced timeline card hover accent */
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: 0; top: 0; bottom: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
   width: 3px;
   border-radius: 3px 0 0 3px;
   background: linear-gradient(180deg, var(--accent), var(--teal));
@@ -1606,16 +1717,22 @@ footer .container {
 .skill-progress-bar span::after {
   content: "";
   position: absolute;
-  top: 0; left: -60%;
+  top: 0;
+  left: -60%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
   animation: shimmer 2.5s ease-in-out infinite;
 }
 
 @keyframes shimmer {
-  0%   { left: -60%; }
-  100% { left: 120%; }
+  0% {
+    left: -60%;
+  }
+
+  100% {
+    left: 120%;
+  }
 }
 
 /* Skill card entrance: pop up from below with delay */
@@ -1624,8 +1741,15 @@ footer .container {
 }
 
 @keyframes skillPop {
-  from { opacity: 0; transform: translateY(28px) scale(0.97); }
-  to   { opacity: 1; transform: translateY(0) scale(1); }
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 /* Skill icon spring on hover */
@@ -1652,9 +1776,17 @@ footer .container {
 }
 
 @keyframes countPulse {
-  0%   { box-shadow: 0 0 0 0 var(--accent-glow); }
-  50%  { box-shadow: 0 0 0 16px transparent; }
-  100% { box-shadow: 0 0 0 0 transparent; }
+  0% {
+    box-shadow: 0 0 0 0 var(--accent-glow);
+  }
+
+  50% {
+    box-shadow: 0 0 0 16px transparent;
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
 }
 
 /* ================= GATEWAY TILES — FLOAT ANIMATION ================= */
@@ -1668,7 +1800,7 @@ footer .container {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, var(--accent-glow), rgba(40,215,180,0.05));
+  background: linear-gradient(135deg, var(--accent-glow), rgba(40, 215, 180, 0.05));
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: inherit;
@@ -1687,8 +1819,15 @@ footer .container {
 }
 
 @keyframes gatewayFloat {
-  0%, 100% { transform: translateY(0) scale(1); }
-  50%       { transform: translateY(-5px) scale(1.06); }
+
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-5px) scale(1.06);
+  }
 }
 
 /* Reveal stagger for gateway grid */
@@ -1763,9 +1902,17 @@ footer .container {
 }
 
 @keyframes borderSweep {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Project number glow on hover */
@@ -1811,8 +1958,15 @@ footer .container {
 }
 
 @keyframes beaconRipple {
-  0%   { transform: scale(1); opacity: 0.7; }
-  100% { transform: scale(3.5); opacity: 0; }
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(3.5);
+    opacity: 0;
+  }
 }
 
 /* Contact rows: animated left accent on hover */
@@ -1824,7 +1978,9 @@ footer .container {
 .contact-list a::before {
   content: "";
   position: absolute;
-  left: 0; top: 0; bottom: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
   width: 3px;
   background: linear-gradient(180deg, var(--accent), var(--teal));
   border-radius: 3px 0 0 3px;
@@ -1839,6 +1995,7 @@ footer .container {
 /* ================= REDUCED MOTION ================= */
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
