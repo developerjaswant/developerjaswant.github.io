@@ -1,81 +1,273 @@
-/* =========================
+/* ===============================
+   HEADER
+================================ */
+
+const header = document.getElementById("header");
+
+
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 30) {
+
+        header.classList.add("scrolled");
+
+    } else {
+
+        header.classList.remove("scrolled");
+
+    }
+
+});
+
+
+
+/* ===============================
+   MOBILE MENU
+================================ */
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const navLinks =
+    document.getElementById("navLinks");
+
+
+menuToggle.addEventListener("click", function () {
+
+    navLinks.classList.toggle("open");
+
+});
+
+
+document
+    .querySelectorAll(".nav-links a")
+    .forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            navLinks.classList.remove("open");
+
+        });
+
+    });
+
+
+
+/* ===============================
    TYPING ANIMATION
-========================= */
+================================ */
 
-const typingEl = document.getElementById("typing");
+const typingText =
+    document.getElementById("typingText");
 
-const words = [
+
+const typingWords = [
+
     "Full Stack Web Developer",
-    "Laravel Developer",
-    "PHP Developer",
-    "Web Application Developer"
+
+    "PHP & Laravel Developer",
+
+    "ERP / SaaS Developer",
+
+    "WordPress & Shopify Developer"
+
 ];
 
+
 let wordIndex = 0;
-let charIndex = 0;
+
+let characterIndex = 0;
+
 let deleting = false;
 
-function typeLoop() {
 
-    const word = words[wordIndex];
+function typeAnimation() {
 
-    typingEl.textContent =
-        word.slice(0, charIndex);
+    const currentWord =
+        typingWords[wordIndex];
 
 
-    if (!deleting && charIndex < word.length) {
+    if (!deleting) {
 
-        charIndex++;
+        typingText.textContent =
+            currentWord.substring(
+                0,
+                characterIndex + 1
+            );
 
-        setTimeout(typeLoop, 75);
+        characterIndex++;
+
+
+        if (characterIndex === currentWord.length) {
+
+            deleting = true;
+
+            setTimeout(
+                typeAnimation,
+                1300
+            );
+
+            return;
+
+        }
+
+    } else {
+
+        typingText.textContent =
+            currentWord.substring(
+                0,
+                characterIndex - 1
+            );
+
+        characterIndex--;
+
+
+        if (characterIndex === 0) {
+
+            deleting = false;
+
+            wordIndex =
+                (wordIndex + 1)
+                % typingWords.length;
+
+        }
 
     }
 
-    else if (!deleting) {
 
-        deleting = true;
+    setTimeout(
+        typeAnimation,
+        deleting ? 35 : 70
+    );
 
-        setTimeout(typeLoop, 1500);
-
-    }
-
-    else if (charIndex > 0) {
-
-        charIndex--;
-
-        setTimeout(typeLoop, 38);
-
-    }
-
-    else {
-
-        deleting = false;
-
-        wordIndex =
-            (wordIndex + 1) % words.length;
-
-        setTimeout(typeLoop, 350);
-    }
 }
 
-typeLoop();
+
+typeAnimation();
 
 
 
-/* =========================
+/* ===============================
+   SCROLL PROGRESS
+================================ */
+
+const progress =
+    document.querySelector(".scroll-progress");
+
+
+window.addEventListener("scroll", function () {
+
+    const scrollTop =
+        document.documentElement.scrollTop;
+
+    const scrollHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+
+    const percentage =
+        (scrollTop / scrollHeight) * 100;
+
+
+    progress.style.width =
+        percentage + "%";
+
+});
+
+
+
+/* ===============================
+   ACTIVE NAVIGATION
+================================ */
+
+const sections =
+    document.querySelectorAll("section[id]");
+
+
+const navigationLinks =
+    document.querySelectorAll(".nav-links a");
+
+
+window.addEventListener("scroll", function () {
+
+    let currentSection = "home";
+
+
+    sections.forEach(function (section) {
+
+        const sectionTop =
+            section.offsetTop - 180;
+
+
+        if (window.scrollY >= sectionTop) {
+
+            currentSection =
+                section.getAttribute("id");
+
+        }
+
+    });
+
+
+    navigationLinks.forEach(function (link) {
+
+        link.classList.remove("active");
+
+
+        if (
+            link.getAttribute("href") ===
+            "#" + currentSection
+        ) {
+
+            link.classList.add("active");
+
+        }
+
+    });
+
+});
+
+
+
+/* ===============================
+   CURSOR GLOW
+================================ */
+
+const cursorGlow =
+    document.querySelector(".cursor-glow");
+
+
+document.addEventListener(
+    "mousemove",
+    function (event) {
+
+        cursorGlow.style.left =
+            event.clientX + "px";
+
+        cursorGlow.style.top =
+            event.clientY + "px";
+
+    }
+);
+
+
+
+/* ===============================
    SCROLL REVEAL
-========================= */
+================================ */
 
 const revealObserver =
     new IntersectionObserver(
 
-        (entries) => {
+        function (entries) {
 
-            entries.forEach(entry => {
+            entries.forEach(function (entry) {
 
                 if (entry.isIntersecting) {
 
-                    entry.target.classList.add("visible");
+                    entry.target.classList.add(
+                        "visible"
+                    );
 
                 }
 
@@ -92,143 +284,112 @@ const revealObserver =
 
 document
     .querySelectorAll(".reveal")
-    .forEach(el => {
+    .forEach(function (element) {
 
-        revealObserver.observe(el);
+        revealObserver.observe(element);
 
     });
 
 
 
-/* =========================
-   ACTIVE NAVIGATION
-========================= */
+/* ===============================
+   COUNTER ANIMATION
+================================ */
 
-const sections =
-    document.querySelectorAll("section[id]");
-
-const navLinks =
-    document.querySelectorAll(".nav-links a");
+const counters =
+    document.querySelectorAll("[data-count]");
 
 
-const navObserver =
+const counterObserver =
     new IntersectionObserver(
 
-        (entries) => {
+        function (entries) {
 
-            entries.forEach(entry => {
+            entries.forEach(function (entry) {
 
-                if (entry.isIntersecting) {
-
-                    navLinks.forEach(link => {
-
-                        link.classList.remove("active");
-
-                    });
-
-
-                    const active =
-                        document.querySelector(
-                            `.nav-links a[href="#${entry.target.id}"]`
-                        );
-
-
-                    if (active) {
-
-                        active.classList.add("active");
-
-                    }
-
+                if (!entry.isIntersecting) {
+                    return;
                 }
+
+
+                const element =
+                    entry.target;
+
+                const target =
+                    Number(
+                        element.dataset.count
+                    );
+
+
+                let current = 0;
+
+
+                const increment =
+                    Math.max(
+                        1,
+                        Math.ceil(target / 35)
+                    );
+
+
+                const counter =
+                    setInterval(function () {
+
+                        current += increment;
+
+
+                        if (current >= target) {
+
+                            current =
+                                target;
+
+                            clearInterval(
+                                counter
+                            );
+
+                        }
+
+
+                        if (target === 100) {
+
+                            element.textContent =
+                                current + "%";
+
+                        } else {
+
+                            element.textContent =
+                                current + "+";
+
+                        }
+
+                    }, 35);
+
+
+                counterObserver.unobserve(
+                    element
+                );
 
             });
 
         },
 
         {
-            rootMargin:
-                "-35% 0px -55% 0px"
+            threshold: 0.8
         }
 
     );
 
 
-sections.forEach(section => {
+counters.forEach(function (counter) {
 
-    navObserver.observe(section);
+    counterObserver.observe(counter);
 
 });
 
 
 
-/* =========================
-   SCROLL PROGRESS
-========================= */
-
-window.addEventListener(
-    "scroll",
-    () => {
-
-        const max =
-            document.documentElement.scrollHeight -
-            window.innerHeight;
-
-
-        const progress =
-            (window.scrollY / max) * 100;
-
-
-        document.querySelector(
-            ".scroll-progress"
-        ).style.width =
-            `${progress}%`;
-
-    }
-);
-
-
-
-/* =========================
-   MOBILE MENU
-========================= */
-
-const menuBtn =
-    document.querySelector(".menu-btn");
-
-const nav =
-    document.querySelector(".nav-links");
-
-
-menuBtn.addEventListener(
-    "click",
-    () => {
-
-        nav.classList.toggle("open");
-
-    }
-);
-
-
-document
-    .querySelectorAll(".nav-links a")
-    .forEach(link => {
-
-        link.addEventListener(
-            "click",
-            () => {
-
-                nav.classList.remove("open");
-
-            }
-        );
-
-    });
-
-
-
-/* =========================
+/* ===============================
    FOOTER YEAR
-========================= */
+================================ */
 
 document.getElementById("year")
     .textContent =
