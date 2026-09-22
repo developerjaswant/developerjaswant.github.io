@@ -1,970 +1,617 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Jaswant Kumar - Full Stack Web Developer specializing in PHP, Laravel, MySQL, REST API, WordPress and Shopify.">
-
-    <meta name="keywords"
-          content="Jaswant Kumar, PHP Developer, Laravel Developer, Full Stack Developer, Web Developer">
-
-    <title>Jaswant Kumar | Full Stack Web Developer</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
-          rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Jaswant Kumar — Full Stack Developer specializing in PHP, Laravel, MySQL, REST APIs, WordPress and Shopify.">
+  <meta name="keywords"
+    content="Jaswant Kumar, PHP Developer, Laravel Developer, Full Stack Developer, Web Developer, ERP Developer">
+  <title>Jaswant Kumar — Full Stack Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <!-- Ambient & Tech Background -->
+  <div class="grid-background"></div>
+  <div class="noise"></div>
+  <div class="cursor-glow"></div>
+  <div class="scroll-progress"></div>
 
-<!-- Cursor Glow -->
-<div class="cursor-glow"></div>
-
-<!-- Background -->
-<div class="grid-background"></div>
-
-<!-- Scroll Progress -->
-<div class="scroll-progress"></div>
-
-
-<!-- ================= HEADER ================= -->
-
-<header class="site-header" id="header">
-
-    <nav class="navbar container">
-
-        <a href="#home" class="logo">
-            &lt;<span>Jaswant</span>/&gt;
-        </a>
-
-        <button class="menu-toggle"
-                id="menuToggle"
-                aria-label="Toggle Menu">
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-        </button>
-
-
-        <div class="nav-links" id="navLinks">
-
-            <a href="#home" class="active">Home</a>
-
-            <a href="#about">About</a>
-
-            <a href="#experience">Experience</a>
-
-            <a href="#skills">Skills</a>
-
-            <a href="#projects">Projects</a>
-
-            <a href="#contact">Contact</a>
-
-            <a href="#contact" class="nav-button">
-                Let's Talk <span>↗</span>
-            </a>
-
-        </div>
-
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a class="brand" href="#home">&lt;<span>Jaswant</span>/&gt;</a>
+      <button class="menu" id="menu" aria-label="Open menu"><i></i><i></i><i></i></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#payments">Payments</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="resume-btn" href="assets/Jaswant-Kumar-CV.pdf" download>Resume ↗</a>
+      </div>
     </nav>
+  </header>
 
-</header>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-orb orb-a"></div>
+      <div class="hero-orb orb-b"></div>
 
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="availability">
+            <span class="status-dot"></span>
+            AVAILABLE FOR OPPORTUNITIES
+          </div>
+          <p class="eyebrow">HELLO, I'M JASWANT KUMAR</p>
+          <h1 class="hero-title">Building digital products that <em>work.</em></h1>
 
-<!-- ================= MAIN ================= -->
-
-<main>
-
-
-<!-- ================= HERO ================= -->
-
-<section class="hero" id="home">
-
-    <div class="container hero-container">
-
-        <div class="hero-content reveal">
-
-            <div class="availability">
-
-                <span class="status-dot"></span>
-
-                Available for new opportunities
-
-            </div>
-
-
-            <div class="hero-small-title">
-                HELLO, I'M
-            </div>
-
-
-            <h1>
-                Jaswant
-                <span>Kumar</span>
-            </h1>
-
-
+          <div class="typing-wrapper">
             <h2>
-                <span id="typingText"></span>
-                <strong>|</strong>
+              <span id="typingText"></span>
+              <strong class="typing-cursor">|</strong>
             </h2>
+          </div>
 
+          <p class="hero-text">
+            Full Stack Developer with <strong>4 years of experience</strong> architecting high-performance web
+            applications, school ERP/SaaS modules, robust REST APIs, and multi-gateway payment workflows using
+            <strong>PHP, Laravel & MySQL</strong>.
+          </p>
 
-            <p class="hero-description">
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">Explore my work <b>↗</b></a>
+            <a class="btn ghost" href="#contact">Let's talk <b>↗</b></a>
+            <a class="btn ghost" href="https://linkedin.com/in/jaswant-kumar-7a151025" target="_blank"
+              rel="noopener">LinkedIn <b>↗</b></a>
+          </div>
 
-                I build scalable web applications and business
-                solutions using
-
-                <strong>PHP, Laravel, MySQL</strong>
-
-                and modern web technologies.
-
-            </p>
-
-
-            <div class="hero-buttons">
-
-                <a href="#projects"
-                   class="btn btn-primary">
-
-                    View My Work
-                    <span>↗</span>
-
-                </a>
-
-
-                <a href="https://linkedin.com/in/jaswant-kumar-7a151025"
-                   target="_blank"
-                   class="btn btn-outline">
-
-                    LinkedIn
-                    <span>↗</span>
-
-                </a>
-
-            </div>
-
-
-            <div class="technology-list">
-
-                <span>PHP</span>
-                <span>Laravel</span>
-                <span>MySQL</span>
-                <span>REST API</span>
-                <span>WordPress</span>
-                <span>Shopify</span>
-
-            </div>
-
+          <div class="hero-stack">
+            <span>PHP 8.x</span>
+            <span>Laravel</span>
+            <span>MySQL</span>
+            <span>REST API</span>
+            <span>WordPress</span>
+            <span>Shopify</span>
+            <span>ERP / SaaS</span>
+          </div>
         </div>
 
+        <!-- Hero Visual (No image - Tech Code Window with Orbits & Floating Badges) -->
+        <div class="hero-art reveal">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="profile-glow"></div>
 
-
-        <!-- HERO IMAGE -->
-
-        <div class="hero-visual reveal">
-
-            <div class="orbit orbit-one"></div>
-
-            <div class="orbit orbit-two"></div>
-
-
-            <div class="profile-image-wrapper">
-
-                <div class="profile-glow"></div>
-
-                <img src="assets/jaswant.png"
-                     alt="Jaswant Kumar - Full Stack Web Developer">
-
+          <!-- Central Code Window -->
+          <div class="code-window">
+            <div class="window-header">
+              <div class="window-dots">
+                <i class="dot-red"></i>
+                <i class="dot-yellow"></i>
+                <i class="dot-green"></i>
+              </div>
+              <span class="window-title">developer.php</span>
             </div>
+            <pre><code><span class="pink">&lt;?php</span>
 
+<span class="purple">namespace</span> <span class="blue">App\Engine</span>;
 
-            <!-- PHP Floating Card -->
-
-            <div class="floating-card php-card">
-
-                <div class="floating-icon">
-                    &lt;/&gt;
-                </div>
-
-                <div>
-                    <strong>PHP</strong>
-                    <small>Backend</small>
-                </div>
-
-            </div>
-
-
-            <!-- Laravel Floating Card -->
-
-            <div class="floating-card laravel-card">
-
-                <div class="floating-icon">
-                    ◆
-                </div>
-
-                <div>
-                    <strong>Laravel</strong>
-                    <small>Framework</small>
-                </div>
-
-            </div>
-
-
-            <!-- PHP Code -->
-
-            <div class="code-window">
-
-                <div class="window-header">
-
-                    <div class="window-dots">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </div>
-
-                    <span>developer.php</span>
-
-                </div>
-
-
-                <pre><code><span class="pink">&lt;?php</span>
-
-<span class="purple">class</span>
-<span class="blue">Developer</span>
+<span class="purple">class</span> <span class="blue">FullStackDeveloper</span>
 {
-
-    <span class="purple">public</span> $stack = [
-
-        <span class="green">'PHP'</span>,
+    <span class="purple">public array</span> <span class="var">$stack</span> = [
+        <span class="green">'PHP 8.x'</span>,
         <span class="green">'Laravel'</span>,
-        <span class="green">'MySQL'</span>
-
+        <span class="green">'MySQL'</span>,
+        <span class="green">'REST APIs'</span>
     ];
 
-    <span class="purple">public function</span>
-    <span class="yellow">build</span>()
+    <span class="purple">public function</span> <span class="yellow">deliverSolution</span>(): <span class="blue">Product</span>
     {
-
-        <span class="purple">return</span>
-        <span class="green">"Great Apps"</span>;
-
+        <span class="purple">return</span> <span class="var">$this</span>-&gt;<span class="yellow">buildScalableSystems</span>([
+            <span class="green">'status'</span> =&gt; <span class="green">'production_ready'</span>,
+            <span class="green">'uptime'</span> =&gt; <span class="green">'99.9%'</span>
+        ]);
     }
 }</code></pre>
+          </div>
 
+          <!-- Floating Badges with Bobbing Animation -->
+          <div class="float-card php-card">
+            <span class="mini-icon">&lt;/&gt;</span>
+            <div>
+              <b>PHP 8.x</b>
+              <small>Backend Architecture</small>
             </div>
+          </div>
 
-        </div>
-
-    </div>
-
-
-    <div class="scroll-hint">
-        SCROLL TO EXPLORE ↓
-    </div>
-
-</section>
-
-
-
-<!-- ================= ABOUT ================= -->
-
-<section class="section" id="about">
-
-    <div class="container">
-
-        <div class="section-heading reveal">
-
-            <span>01</span>
-
-            <p>ABOUT ME</p>
-
-            <h2>
-                Turning ideas into
-                <em>working products.</em>
-            </h2>
-
-        </div>
-
-
-        <div class="about-grid">
-
-            <div class="about-text reveal">
-
-                <p>
-                    I'm a
-                    <strong>Full Stack Web Developer</strong>
-                    focused on building practical,
-                    scalable and user-friendly web applications.
-                </p>
-
-
-                <p>
-                    My core experience is with
-                    <strong>PHP and Laravel</strong>,
-                    including ERP, CRM, SaaS workflows,
-                    REST APIs, payment gateway integrations
-                    and third-party APIs.
-                </p>
-
-
-                <p>
-                    I also work with WordPress, Shopify,
-                    Magento and OpenCart for business and
-                    e-commerce websites.
-                </p>
-
-
-                <p>
-                    At NLET, I work on a school ERP ecosystem
-                    and contribute to lead management,
-                    notifications, payments, reports and
-                    API-driven features.
-                </p>
-
+          <div class="float-card laravel-card">
+            <span class="mini-icon">◆</span>
+            <div>
+              <b>Laravel</b>
+              <small>MVC & Eloquent</small>
             </div>
+          </div>
 
-
-            <div class="stats-grid reveal">
-
-                <div class="stat-box">
-
-                    <strong data-count="3">0</strong>
-
-                    <span>Years Experience</span>
-
-                </div>
-
-
-                <div class="stat-box">
-
-                    <strong data-count="15">0</strong>
-
-                    <span>Payment Integrations</span>
-
-                </div>
-
-
-                <div class="stat-box">
-
-                    <strong data-count="4">0</strong>
-
-                    <span>Web Platforms</span>
-
-                </div>
-
-
-                <div class="stat-box">
-
-                    <strong data-count="100">0</strong>
-
-                    <span>Problem Solving</span>
-
-                </div>
-
+          <div class="float-card api-card">
+            <span class="mini-icon">API</span>
+            <div>
+              <b>REST APIs</b>
+              <small>Sanctum & Guzzle</small>
             </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ================= EXPERIENCE ================= -->
-
-<section class="section" id="experience">
-
-    <div class="container">
-
-        <div class="section-heading reveal">
-
-            <span>02</span>
-
-            <p>EXPERIENCE</p>
-
-            <h2>
-                My professional
-                <em>journey.</em>
-            </h2>
-
-        </div>
-
-
-        <div class="timeline">
-
-
-            <!-- NLET -->
-
-            <article class="timeline-item reveal">
-
-                <div class="timeline-dot"></div>
-
-                <small>
-                    JUL 2023 — PRESENT
-                </small>
-
-                <h3>
-                    Web Developer
-                </h3>
-
-                <h4>
-                    NLET Company
-                </h4>
-
-                <p>
-                    Developing and maintaining a school ERP/SaaS
-                    platform using Laravel, PHP and MySQL.
-                    Worked on lead management flow, ERP/CRM
-                    modules, REST APIs, notifications,
-                    payment gateways and third-party integrations.
-                </p>
-
-
-                <div class="tags">
-
-                    <span>Laravel</span>
-                    <span>PHP</span>
-                    <span>MySQL</span>
-                    <span>REST API</span>
-                    <span>SaaS</span>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- AMBIENT -->
-
-            <article class="timeline-item reveal">
-
-                <div class="timeline-dot"></div>
-
-                <small>
-                    NOV 2022 — JUN 2023
-                </small>
-
-                <h3>
-                    Web Developer
-                </h3>
-
-                <h4>
-                    Ambient Infotech
-                </h4>
-
-                <p>
-                    Worked on e-commerce websites and integrations
-                    using Magento and OpenCart with backend and
-                    frontend customization.
-                </p>
-
-
-                <div class="tags">
-
-                    <span>Magento</span>
-                    <span>OpenCart</span>
-                    <span>PHP</span>
-                    <span>JavaScript</span>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- LAKSHIKA -->
-
-            <article class="timeline-item reveal">
-
-                <div class="timeline-dot"></div>
-
-                <small>
-                    2021 — 2022
-                </small>
-
-                <h3>
-                    Web Developer
-                </h3>
-
-                <h4>
-                    Lakshika
-                </h4>
-
-                <p>
-                    Built and maintained database-driven websites
-                    using Core PHP, MySQL, HTML, CSS, JavaScript
-                    and Bootstrap.
-                </p>
-
-
-                <div class="tags">
-
-                    <span>Core PHP</span>
-                    <span>MySQL</span>
-                    <span>Bootstrap</span>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ================= SKILLS ================= -->
-
-<section class="section" id="skills">
-
-    <div class="container">
-
-        <div class="section-heading reveal">
-
-            <span>03</span>
-
-            <p>SKILLS</p>
-
-            <h2>
-                My technical
-                <em>toolbox.</em>
-            </h2>
-
-        </div>
-
-
-        <div class="skills-grid">
-
-
-            <div class="skill-card reveal">
-
-                <div class="skill-icon">
-                    &lt;/&gt;
-                </div>
-
-                <h3>
-                    PHP & Laravel
-                </h3>
-
-                <p>
-                    MVC, authentication, middleware,
-                    queues, validation, APIs and
-                    business logic.
-                </p>
-
-                <div class="skill-progress">
-                    <span style="width:92%"></span>
-                </div>
-
+          </div>
+
+          <div class="float-card db-card">
+            <span class="mini-icon">DB</span>
+            <div>
+              <b>MySQL</b>
+              <small>Optimized Queries</small>
             </div>
-
-
-
-            <div class="skill-card reveal">
-
-                <div class="skill-icon">
-                    DB
-                </div>
-
-                <h3>
-                    MySQL
-                </h3>
-
-                <p>
-                    Database queries, relationships,
-                    reporting and database-driven
-                    applications.
-                </p>
-
-                <div class="skill-progress">
-                    <span style="width:88%"></span>
-                </div>
-
-            </div>
-
-
-
-            <div class="skill-card reveal">
-
-                <div class="skill-icon">
-                    API
-                </div>
-
-                <h3>
-                    REST APIs
-                </h3>
-
-                <p>
-                    API development, authentication,
-                    JSON responses and third-party
-                    integrations.
-                </p>
-
-                <div class="skill-progress">
-                    <span style="width:90%"></span>
-                </div>
-
-            </div>
-
-
-
-            <div class="skill-card reveal">
-
-                <div class="skill-icon">
-                    JS
-                </div>
-
-                <h3>
-                    JavaScript
-                </h3>
-
-                <p>
-                    jQuery, AJAX, DataTables,
-                    validation and dynamic interfaces.
-                </p>
-
-                <div class="skill-progress">
-                    <span style="width:80%"></span>
-                </div>
-
-            </div>
-
-
-
-            <div class="skill-card reveal">
-
-                <div class="skill-icon">
-                    WP
-                </div>
-
-                <h3>
-                    WordPress
-                </h3>
-
-                <p>
-                    Business websites, Elementor,
-                    theme/plugin customization and
-                    responsive layouts.
-                </p>
-
-                <div class="skill-progress">
-                    <span style="width:85%"></span>
-                </div>
-
-            </div>
-
-
-
-            <div class="skill-card reveal">
-
-                <div class="skill-icon">
-                    SH
-                </div>
-
-                <h3>
-                    Shopify
-                </h3>
-
-                <p>
-                    Theme customization, Liquid sections
-                    and responsive e-commerce components.
-                </p>
-
-                <div class="skill-progress">
-                    <span style="width:78%"></span>
-                </div>
-
-            </div>
-
+          </div>
         </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ================= PHP CODE ================= -->
-
-<section class="section code-section">
-
-    <div class="container code-grid">
-
-        <div class="section-heading reveal">
-
-            <span>04</span>
-
-            <p>PHP / LARAVEL</p>
-
-            <h2>
-                I think in
-                <em>systems.</em>
-            </h2>
-
-            <p class="section-subtitle">
-                A visual example of the Laravel/PHP
-                structure I work with.
-            </p>
-
-        </div>
-
-
-        <div class="large-code-window reveal">
-
-            <div class="window-header">
-
-                <div class="window-dots">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </div>
-
-                <span>routes/web.php</span>
-
-            </div>
-
-
-            <pre><code><span class="purple">use</span>
-App\Http\Controllers\ProjectController;
-
-Route::<span class="yellow">middleware</span>(
-    <span class="green">'auth'</span>
-)
--&gt;<span class="yellow">group</span>(
-    <span class="purple">function</span>() {
-
-    Route::<span class="yellow">get</span>(
-        <span class="green">'/projects'</span>,
-        [
-            ProjectController::<span class="blue">class</span>,
-            <span class="green">'index'</span>
-        ]
-    );
-
-    Route::<span class="yellow">post</span>(
-        <span class="green">'/projects'</span>,
-        [
-            ProjectController::<span class="blue">class</span>,
-            <span class="green">'store'</span>
-        ]
-    );
-
-});</code></pre>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ================= PROJECTS ================= -->
-
-<section class="section" id="projects">
-
-    <div class="container">
-
-        <div class="section-heading reveal">
-
-            <span>05</span>
-
-            <p>PROJECTS</p>
-
-            <h2>
-                Things I've
-                <em>worked on.</em>
-            </h2>
-
-        </div>
-
-
-        <div class="projects-grid">
-
-
-            <article class="project-card reveal">
-
-                <small>
-                    01 · ERP / SaaS
-                </small>
-
-                <h3>
-                    School ERP Platform
-                </h3>
-
-                <p>
-                    Multi-branch school management system
-                    covering admissions, student/staff management,
-                    attendance, fees, notifications, reports
-                    and API integrations.
-                </p>
-
-                <div class="tags">
-
-                    <span>Laravel</span>
-                    <span>PHP</span>
-                    <span>MySQL</span>
-                    <span>REST API</span>
-
-                </div>
-
-            </article>
-
-
-
-            <article class="project-card reveal">
-
-                <small>
-                    02 · PAYMENTS
-                </small>
-
-                <h3>
-                    Payment Gateway Integrations
-                </h3>
-
-                <p>
-                    Integrated multiple payment providers for
-                    online fee and payment workflows including
-                    callbacks, responses and transaction states.
-                </p>
-
-                <div class="tags">
-
-                    <span>Razorpay</span>
-                    <span>Paytm</span>
-                    <span>CCAvenue</span>
-                    <span>Cashfree</span>
-
-                </div>
-
-            </article>
-
-
-
-            <article class="project-card reveal">
-
-                <small>
-                    03 · CMS / E-COMMERCE
-                </small>
-
-                <h3>
-                    Business & E-commerce Websites
-                </h3>
-
-                <p>
-                    Customized websites using WordPress,
-                    Shopify, Magento and OpenCart with
-                    responsive frontend experiences.
-                </p>
-
-                <div class="tags">
-
-                    <span>WordPress</span>
-                    <span>Shopify</span>
-                    <span>Magento</span>
-                    <span>OpenCart</span>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ================= CONTACT ================= -->
-
-<section class="section" id="contact">
-
-    <div class="container contact-box reveal">
-
+      </div>
+
+      <!-- Scroll to explore hint -->
+      <div class="scroll-hint">
+        <span>SCROLL TO EXPLORE</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M7 10l5 5 5-5" />
+        </svg>
+      </div>
+
+      <!-- Marquee ticker -->
+      <div class="hero-marquee">
         <div>
+          <span>PHP 8.X</span><i>✦</i>
+          <span>LARAVEL</span><i>✦</i>
+          <span>SCHOOL ERP</span><i>✦</i>
+          <span>REST APIS</span><i>✦</i>
+          <span>14 PAYMENT GATEWAYS</span><i>✦</i>
+          <span>SHOPIFY</span><i>✦</i>
+          <span>WORDPRESS</span><i>✦</i>
+          <span>MYSQL</span><i>✦</i>
+          <span>PHP 8.X</span><i>✦</i>
+          <span>LARAVEL</span><i>✦</i>
+          <span>SCHOOL ERP</span><i>✦</i>
+          <span>REST APIS</span><i>✦</i>
+          <span>14 PAYMENT GATEWAYS</span><i>✦</i>
+          <span>SHOPIFY</span><i>✦</i>
+          <span>WORDPRESS</span><i>✦</i>
+          <span>MYSQL</span><i>✦</i>
+        </div>
+      </div>
+    </section>
 
-            <p class="contact-label">
-                LET'S CONNECT
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span>01 / ABOUT</span>
+          <h2>Developer by role.<br><em>Problem solver by mindset.</em></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              I am a dedicated Web Developer with <strong>4 years of real-world experience</strong> specializing in
+              robust web applications, enterprise ERP solutions, and complex e-commerce customization.
             </p>
+            <p>
+              My engineering core revolves around <strong>PHP 8.x, Laravel, and MySQL</strong>. I master MVC design
+              patterns, Eloquent ORM, Query Builder optimization, secure middleware, database schema migrations, and
+              high-load business logic execution.
+            </p>
+            <p>
+              I build scalable RESTful APIs protected with Sanctum token authentication, automate outbound
+              communications (Email, WhatsApp, SMS), and build bulletproof payment gateway integrations that ensure zero
+              transaction drop-off.
+            </p>
+          </div>
+          <div class="metric-grid reveal">
+            <article>
+              <strong data-count="4">0</strong>
+              <span>Years Experience</span>
+            </article>
+            <article>
+              <strong data-count="14">0</strong>
+              <span>Payment Gateways</span>
+            </article>
+            <article>
+              <strong data-count="20">0</strong>
+              <span>Projects Delivered</span>
+            </article>
+            <article>
+              <strong data-count="100">0</strong>
+              <span>Commitment to Code Quality</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <h2>
-                Have a project
-                in mind?
-            </h2>
+    <!-- Experience Section (Timeline Design) -->
+    <section class="section dark-panel" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span>02 / EXPERIENCE</span>
+          <h2>Where I've been<br><em>building things.</em></h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-beam"></div>
+          <!-- NLET -->
+          <article class="timeline-item reveal" style="--delay:0.1s">
+            <div class="timeline-dot"><span class="sonar-ring"></span><span class="sonar-ring sonar-ring-2"></span>
+            </div>
+            <div class="exp-date">JUL 2023 — PRESENT</div>
+            <div class="exp-content">
+              <h3>Web Developer <small>NLET Solutions Private Limited</small></h3>
+              <p>
+                Lead development and maintenance of scalable modules for an enterprise school ERP platform using
+                Laravel, PHP 8.x, and MySQL. Implemented automated notification pipelines across WhatsApp, SMS, and
+                Email; architected REST APIs for mobile applications; integrated 14+ payment gateways with instant
+                webhook verification; customized Shopify & WordPress solutions for client brands.
+              </p>
+              <div class="tags">
+                <span>Laravel</span>
+                <span>PHP 8.x</span>
+                <span>MySQL</span>
+                <span>REST API</span>
+                <span>School ERP</span>
+                <span>SaaS</span>
+                <span>Webhooks</span>
+              </div>
+            </div>
+          </article>
 
-            <span>
-                Open to web development roles,
-                freelance work and interesting products.
-            </span>
+          <!-- Ambient -->
+          <article class="timeline-item reveal" style="--delay:0.25s">
+            <div class="timeline-dot"><span class="sonar-ring"></span><span class="sonar-ring sonar-ring-2"></span>
+            </div>
+            <div class="exp-date">NOV 2022 — JUN 2023</div>
+            <div class="exp-content">
+              <h3>Web Developer <small>Ambient Infotech Private Limited</small></h3>
+              <p>
+                Constructed high-traffic e-commerce storefronts and custom backend modules with PHP, Magento, OpenCart,
+                and MySQL. Handled responsive UI styling with Bootstrap & vanilla JavaScript, debugged complex
+                production incidents, and integrated custom business workflows.
+              </p>
+              <div class="tags">
+                <span>PHP</span>
+                <span>Magento</span>
+                <span>OpenCart</span>
+                <span>MySQL</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+              </div>
+            </div>
+          </article>
 
+          <!-- Lakshika / Freelance -->
+          <article class="timeline-item reveal" style="--delay:0.4s">
+            <div class="timeline-dot"><span class="sonar-ring"></span><span class="sonar-ring sonar-ring-2"></span>
+            </div>
+            <div class="exp-date">2021 — 2022</div>
+            <div class="exp-content">
+              <h3>Web Developer Intern <small>Lakshika IT Solutions Pvt Ltd</small></h3>
+              <p>
+                Developed database-driven web applications, admin portals, and dynamic client sites using Core PHP,
+                MySQL relational databases, HTML5, CSS3, and AJAX.
+              </p>
+              <div class="tags">
+                <span>Core PHP</span>
+                <span>MySQL</span>
+                <span>AJAX</span>
+                <span>HTML5 / CSS3</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section with Progress Bars -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span>03 / TOOLBOX</span>
+          <h2>My technical<br><em>arsenal.</em></h2>
+        </div>
+        <div class="skill-matrix">
+          <article class="skill reveal" style="--delay:0.05s">
+            <div class="skill-header">
+              <span class="skill-icon">&lt;/&gt;</span>
+              <span class="skill-no">01</span>
+            </div>
+            <h3>Backend Architecture</h3>
+            <p>PHP 8.x · Laravel · MVC · Eloquent ORM · Query Builder · Middleware · Form Requests · Validation · CRUD ·
+              Queues</p>
+            <div class="skill-row">
+              <div class="skill-progress-bar"><span data-progress="94" style="width:0%"></span></div>
+              <span class="skill-pct">0%</span>
+            </div>
+          </article>
+
+          <article class="skill reveal" style="--delay:0.15s">
+            <div class="skill-header">
+              <span class="skill-icon">API</span>
+              <span class="skill-no">02</span>
+            </div>
+            <h3>RESTful APIs</h3>
+            <p>REST APIs · Laravel Sanctum · Bearer Tokens · Postman Testing · Guzzle HTTP Client · Webhooks ·
+              Third-party APIs</p>
+            <div class="skill-row">
+              <div class="skill-progress-bar"><span data-progress="92" style="width:0%"></span></div>
+              <span class="skill-pct">0%</span>
+            </div>
+          </article>
+
+          <article class="skill reveal" style="--delay:0.25s">
+            <div class="skill-header">
+              <span class="skill-icon">DB</span>
+              <span class="skill-no">03</span>
+            </div>
+            <h3>Database Engineering</h3>
+            <p>MySQL · Relational Design · Joins &amp; Indexing · Query Optimization · Schema Migrations · Seeders ·
+              Data Modeling</p>
+            <div class="skill-row">
+              <div class="skill-progress-bar"><span data-progress="89" style="width:0%"></span></div>
+              <span class="skill-pct">0%</span>
+            </div>
+          </article>
+
+          <article class="skill reveal" style="--delay:0.05s">
+            <div class="skill-header">
+              <span class="skill-icon">UI</span>
+              <span class="skill-no">04</span>
+            </div>
+            <h3>Frontend Development</h3>
+            <p>JavaScript (ES6+) · AJAX · jQuery · HTML5 · CSS3 · Tailwind CSS · Bootstrap · Responsive UI ·
+              Micro-animations</p>
+            <div class="skill-row">
+              <div class="skill-progress-bar"><span data-progress="84" style="width:0%"></span></div>
+              <span class="skill-pct">0%</span>
+            </div>
+          </article>
+
+          <article class="skill reveal" style="--delay:0.15s">
+            <div class="skill-header">
+              <span class="skill-icon">SEC</span>
+              <span class="skill-no">05</span>
+            </div>
+            <h3>Security &amp; Auth</h3>
+            <p>Role-based Permissions (Spatie) · Laravel Socialite · CSRF/XSS Mitigation · Activity Logging · Session
+              Security</p>
+            <div class="skill-row">
+              <div class="skill-progress-bar"><span data-progress="88" style="width:0%"></span></div>
+              <span class="skill-pct">0%</span>
+            </div>
+          </article>
+
+          <article class="skill reveal" style="--delay:0.25s">
+            <div class="skill-header">
+              <span class="skill-icon">CMS</span>
+              <span class="skill-no">06</span>
+            </div>
+            <h3>CMS &amp; E-Commerce</h3>
+            <p>Shopify (Liquid, custom sections) · WordPress (Elementor, custom themes) · Magento · OpenCart · Store
+              Optimization</p>
+            <div class="skill-row">
+              <div class="skill-progress-bar"><span data-progress="86" style="width:0%"></span></div>
+              <span class="skill-pct">0%</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment Engineering Section -->
+    <section class="section payment-section" id="payments">
+      <div class="container">
+        <div class="payment-intro reveal">
+          <div>
+            <span>04 / PAYMENT ENGINEERING</span>
+            <h2>14 gateways.<br><em>Zero transaction loss.</em></h2>
+          </div>
+          <p>
+            Specialized in end-to-end payment gateway lifecycle: seamless checkout initiation, robust webhook
+            idempotency, refund processing, signature verification, and automated transaction reconciliation.
+          </p>
         </div>
 
-
-        <div class="contact-buttons">
-
-            <a href="mailto:your-email@gmail.com"
-               class="btn btn-primary">
-
-                Email Me ↗
-
-            </a>
-
-
-            <a href="https://github.com/developerjaswant"
-               target="_blank"
-               class="btn btn-outline">
-
-                GitHub ↗
-
-            </a>
-
+        <div class="gateway-wall">
+          <article class="gateway reveal">
+            <div class="gateway-logo razor">R</div><b>Razorpay</b><small>Gateway</small>
+          </article>
+          <article class="gateway reveal">
+            <div class="gateway-logo paytm">P</div><b>Paytm</b><small>Gateway</small>
+          </article>
+          <article class="gateway reveal">
+            <div class="gateway-logo cca">C</div><b>CCAvenue</b><small>Gateway</small>
+          </article>
+          <article class="gateway reveal">
+            <div class="gateway-logo world">W</div><b>Worldline</b><small>Gateway</small>
+          </article>
+          <article class="gateway reveal">
+            <div class="gateway-logo ease">E</div><b>Easebuzz</b><small>Gateway</small>
+          </article>
+          <article class="gateway reveal">
+            <div class="gateway-logo paynimo">P</div><b>Paynimo</b><small>Gateway</small>
+          </article>
+          <article class="gateway reveal">
+            <div class="gateway-logo payu">PU</div><b>PayUBiz</b><small>Gateway</small>
+          </article>
+          <article class="gateway reveal">
+            <div class="gateway-logo phone">P</div><b>PhonePe</b><small>Gateway</small>
+          </article>
+          <article class="gateway reveal">
+            <div class="gateway-logo teller">T</div><b>TheTeller</b><small>Gateway</small>
+          </article>
+          <article class="gateway reveal">
+            <div class="gateway-logo ntt">N</div><b>NTT DATA</b><small>Gateway</small>
+          </article>
+          <article class="gateway reveal">
+            <div class="gateway-logo easy">E</div><b>Easypay</b><small>Gateway</small>
+          </article>
+          <article class="gateway reveal">
+            <div class="gateway-logo stack">PS</div><b>Paystack</b><small>Gateway</small>
+          </article>
+          <article class="gateway reveal">
+            <div class="gateway-logo cash">CF</div><b>Cashfree</b><small>Gateway</small>
+          </article>
+          <article class="gateway reveal">
+            <div class="gateway-logo remita">R</div><b>Remita</b><small>Gateway</small>
+          </article>
         </div>
 
+        <!-- Payment Service Code Example -->
+        <div class="payment-code reveal">
+          <div class="code-top">
+            <div class="window-dots">
+              <i class="dot-red"></i>
+              <i class="dot-yellow"></i>
+              <i class="dot-green"></i>
+            </div>
+            <label>PaymentGatewayService.php</label>
+            <button class="copy-code-btn" id="copyCodeBtn" aria-label="Copy code">⎘ Copy</button>
+          </div>
+          <pre><code><span class="pink">&lt;?php</span>
+
+<span class="purple">namespace</span> <span class="blue">App\Services\Payment</span>;
+
+<span class="purple">class</span> <span class="blue">PaymentGatewayService</span>
+{
+    <span class="purple">public function</span> <span class="yellow">processPayment</span>(<span class="blue">GatewayContract</span> <span class="var">$gateway</span>, <span class="purple">array</span> <span class="var">$payload</span>): <span class="blue">PaymentResponse</span>
+    {
+        <span class="var">$charge</span> = <span class="var">$gateway</span>-&gt;<span class="yellow">charge</span>(<span class="var">$payload</span>);
+
+        <span class="purple">return</span> <span class="var">$this</span>-&gt;<span class="yellow">syncTransactionStatus</span>(
+            <span class="var">$charge</span>-&gt;<span class="yellow">status</span>,
+            <span class="var">$charge</span>-&gt;<span class="yellow">transaction_id</span>,
+            <span class="var">$charge</span>-&gt;<span class="yellow">meta</span>
+        );
+    }
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work / Projects -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span>05 / SELECTED WORK</span>
+          <h2>Projects that showcase<br><em>engineering depth.</em></h2>
+        </div>
+        <div class="project-grid">
+          <a class="project reveal" href="https://erp.nletschool.com/" target="_blank" rel="noopener">
+            <div class="project-number">01</div>
+            <div class="project-content">
+              <small>ERP / SAAS / LARAVEL</small>
+              <h3>NLET School ERP Ecosystem</h3>
+              <p>Comprehensive multi-tenant school ERP system handling student admissions, fees collection, automated
+                WhatsApp/SMS/Email notifications, reports, REST APIs, and multi-gateway payment processing.</p>
+              <div class="tags">
+                <span>Laravel</span>
+                <span>PHP 8.x</span>
+                <span>MySQL</span>
+                <span>REST API</span>
+                <span>Webhooks</span>
+              </div>
+            </div>
+            <b class="project-arrow">↗</b>
+          </a>
+
+          <a class="project reveal" href="https://evaonelifetolive.com/" target="_blank" rel="noopener">
+            <div class="project-number">02</div>
+            <div class="project-content">
+              <small>SHOPIFY / E-COMMERCE</small>
+              <h3>Eva — Premium Healing Crystals</h3>
+              <p>Custom tailored Shopify storefront with custom Liquid sections, responsive layout, fluid cart
+                experience, and optimized payment integration.</p>
+              <div class="tags">
+                <span>Shopify</span>
+                <span>Liquid</span>
+                <span>JavaScript</span>
+                <span>E-Commerce</span>
+              </div>
+            </div>
+            <b class="project-arrow">↗</b>
+          </a>
+
+          <a class="project reveal" href="https://theroyalvowsevents.com/" target="_blank" rel="noopener">
+            <div class="project-number">03</div>
+            <div class="project-content">
+              <small>WORDPRESS / PORTAL</small>
+              <h3>The Royal Vows Events</h3>
+              <p>Luxury wedding event management platform built on custom WordPress, with tailored sections,
+                mobile-first design, interactive inquiry flows, and on-page SEO optimization.</p>
+              <div class="tags">
+                <span>WordPress</span>
+                <span>Elementor</span>
+                <span>CSS3</span>
+                <span>SEO</span>
+              </div>
+            </div>
+            <b class="project-arrow">↗</b>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card reveal">
+        <div class="contact-left">
+          <span>06 / CONTACT</span>
+          <h2>Let's build something<br><em>exceptional.</em></h2>
+          <p>
+            Whether you have an upcoming project, are looking for a skilled full stack engineer, or want to discuss
+            enterprise architecture, my inbox is always open.
+          </p>
+          <div class="contact-badges">
+            <span class="badge-item">📍 Jaipur, Rajasthan, India</span>
+            <span class="badge-item badge-available"><span class="beacon-dot"></span>Immediate Availability</span>
+          </div>
+        </div>
+        <div class="contact-list">
+          <a href="tel:+919413840822">
+            <small>PHONE</small>
+            <strong>+91 9413840822</strong>
+            <b>↗</b>
+          </a>
+          <a href="mailto:jaswantkumar38407@gmail.com">
+            <small>EMAIL</small>
+            <strong>jaswantkumar38407@gmail.com</strong>
+            <b>↗</b>
+          </a>
+          <a href="https://www.linkedin.com/in/jaswant-kumar-7a1510257/" target="_blank" rel="noopener">
+            <small>LINKEDIN</small>
+            <strong>jaswant-kumar-7a151025</strong>
+            <b>↗</b>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© <span id="year"></span> Jaswant Kumar — Crafted with Precision</span>
+      <span>PHP · Laravel · MySQL · REST APIs · SaaS</span>
     </div>
+  </footer>
 
-</section>
-
-
-</main>
-
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-    <div class="container footer-content">
-
-        <span>
-            © <span id="year"></span>
-            Jaswant Kumar
-        </span>
-
-        <span>
-            PHP · Laravel · MySQL · Modern Web
-        </span>
-
-    </div>
-
-</footer>
-
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
+
 </html>
