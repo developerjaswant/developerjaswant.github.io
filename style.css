@@ -261,8 +261,8 @@ body {
 }
 
 .hero-title {
-  font: 700 clamp(44px, 5.8vw, 76px) / 1.05 "Space Grotesk", sans-serif;
-  letter-spacing: -3px;
+  font: 700 clamp(26px, 3.2vw, 46px) / 1.12 "Space Grotesk", sans-serif;
+  letter-spacing: -1.5px;
   margin: 8px 0 16px;
   color: #ffffff;
 }
